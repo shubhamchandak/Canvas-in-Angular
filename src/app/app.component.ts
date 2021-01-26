@@ -45,8 +45,8 @@ export class AppComponent implements AfterViewInit{
     });
     if(this.selectedBoxIndex >= 0) {
       this.boxArray[this.selectedBoxIndex].highlight = true;
-      this.draw();
     }
+    this.draw();
   }
 
   onKeyPress(event: KeyboardEvent) {
