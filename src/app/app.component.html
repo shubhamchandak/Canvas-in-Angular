@@ -2,7 +2,7 @@
   <button (click)="toggleKeyboardControl();draw();" style="margin-right: 20px;">{{ buttonText }}</button>
   <button (click)="addBox()"  style="margin-right: 20px;">New Box</button>
   <button (click)="reset();draw();">Reset</button>
-  <p *ngIf="keyBoardControl">You can select any box by clicking on it and navigate around by  pressing 'W', 'A', 'S' and 'D' keys. Click 'Delete' to remove the selected box.</p>
+  <p *ngIf="keyBoardControl">You can select any box by clicking on it and navigate around by  pressing arrow keys or 'W', 'A', 'S' and 'D' keys. Click 'Delete' to remove the selected box.</p>
 </div>
 
 <div style="align-items: center;">
