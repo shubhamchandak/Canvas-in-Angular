@@ -16,8 +16,8 @@ export class AppComponent implements AfterViewInit{
   keyboardListner: any;
   boxWidth: number = 100;
   boxHeight: number = 100;
-  canvasWidth: number = 600;
-  canvasHeight: number = 600;
+  canvasWidth: number = 1000;
+  canvasHeight: number = 500;
   selectedBoxIndex: number = -1;
   currentId: number = 0;
   

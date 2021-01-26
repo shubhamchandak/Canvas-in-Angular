@@ -2,8 +2,9 @@
   <button (click)="toggleKeyboardControl();draw();" style="margin-right: 20px;">{{ buttonText }}</button>
   <button (click)="addBox()"  style="margin-right: 20px;">New Box</button>
   <button (click)="reset();draw();">Reset</button>
+  <p *ngIf="keyBoardControl">You can select any box by clicking on it and navigate around by  pressing 'W', 'A', 'S' and 'D' keys. Click 'Delete' to remove the selected box.</p>
 </div>
-<div *ngIf="keyBoardControl">You can select any box by clicking on it and navigate around by  pressing 'W', 'A', 'S' and 'D' keys. Click 'Delete' to remove the selected box.</div>
+
 <div style="align-items: center;">
   <canvas #myCanvas style="border-width: 10px; border-style: solid; border-color: black;"></canvas>
 </div>
