@@ -50,9 +50,7 @@ export class AppComponent implements AfterViewInit{
   }
 
   onKeyPress(event: KeyboardEvent) {
-    console.log(event);
     if(this.selectedBoxIndex < 0 || this.selectedBoxIndex >= this.boxArray.length) return;
-    console.log(this.myCanvas.nativeElement.height, this.boxArray[this.selectedBoxIndex].yPosition+2);
     if(event.code.toLowerCase() == "keyw" || event.code.toLowerCase() == "arrowup") this.boxArray[this.selectedBoxIndex].yPosition = Math.max(0, this.boxArray[this.selectedBoxIndex].yPosition-2);
     else if(event.code.toLowerCase() == "keys" || event.code.toLowerCase() == "arrowdown") this.boxArray[this.selectedBoxIndex].yPosition = Math.min(this.myCanvas.nativeElement.height-this.boxHeight, this.boxArray[this.selectedBoxIndex].yPosition+2);
     else if(event.code.toLowerCase() == "keya" || event.code.toLowerCase() == "arrowleft") this.boxArray[this.selectedBoxIndex].xPosition = Math.max(0, this.boxArray[this.selectedBoxIndex].xPosition-2);
