@@ -113,6 +113,7 @@ export class AppComponent implements AfterViewInit{
   reset() {
     this.selectedBoxIndex = -1;
     this.boxArray = [];
+    this.currentId = 0;
   }
 
 }
