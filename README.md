@@ -5,7 +5,7 @@ Canvas is primarily used for drawing elements and putting them into motion.
 
 ## Local Server
 
-An Express app is build to lauch the website on localhost
+An Express app is build to lauch the website on localhost. After clonning the project install node modules by "npm install" and then launch the app with "npm start". The site can be accessed on localhost:8080 port.
 
 ## Production Server
 
